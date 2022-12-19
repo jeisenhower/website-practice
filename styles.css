@@ -1,0 +1,55 @@
+header {
+    min-height: 100%;
+    width: 100%;
+    height: 100%; /* NEW */
+ }
+
+html, body {
+    height: 100%;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+.rows-container {
+    flex: 1 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+.flexbox-container-1 {
+    flex: 1 100px;
+    display: flex;
+}
+
+.flexbox-item {
+    flex: 1 100px;
+    min-height: 100px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: grey;
+    
+}
+
+/* NOTE: Align items aligns the items on the vertical axis (height) if flex is normal (if set to column, it is the opposite). Justify-content 
+    aligns items on the horizontal axis if flex direction is normal. */
+
+.flexbox-container-2 {
+    flex: 1 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 3px solid #333;
+}
+
+#flexbox-item-4 {
+    /*  flex: 1 100px; */
+    min-height: 100px;
+    justify-self: center;
+    width: 20%;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: grey;
+} 
+
+
